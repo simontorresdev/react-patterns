@@ -1,8 +1,27 @@
-import React from 'react';
+import React, {useState} from 'react';
+import { List } from './List';
+import { ListPattern } from './ListPattern';
 
-export const RenderPropsPage = () => (
-  <>
-    <h2>Render Props</h2>
-    <p>Sigue las instrucciones que vienen en el curso.</p>
-  </>
-);
+export const RenderPropsPage = () => {
+  const [definitions] = useState({
+    "name": "Frank",
+    "last-name": "Zappa",
+  });
+
+  return(
+    <>
+      <h2>Ejemplo sin Render Props</h2>
+      <List data={definitions} />
+      <hr />
+      <h2>Ejemplo con Render Props</h2>
+      <ListPattern 
+        data={definitions} 
+        render={({key, description}) => (
+          <>
+            {key}: <strong>{description}</strong>
+          </>
+        )}
+      />
+    </>
+  );
+};
