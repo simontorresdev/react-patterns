@@ -10,12 +10,6 @@ export const ControlPropsPage = () => {
     setCounter(counter + 5);
   };
 
-  const handleChange = ({target: {value}}) => {
-    if (value === 'like') {
-      setCounter(counter + 1);
-    }
-  };
-
   return (
     <>
       <h2>Ejemplo sin Control Props</h2>

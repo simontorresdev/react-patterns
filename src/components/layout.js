@@ -125,7 +125,7 @@ export const Layout = ({children}) => {
             noWrap
             className={classes.title}
           >
-            Guía definitiva: Aprende los 9 Patrones Avanzados en ReactJS
+            Patrones Avanzados en ReactJS
           </Typography>
         </Toolbar>
       </AppBar>

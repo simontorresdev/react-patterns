@@ -4,7 +4,6 @@ import {ExtensibleStylesPage} from './extensible-styles';
 import {CompoundComponentPage} from './compound-component';
 import {RenderPropsPage} from './render-props';
 import {ControlPropsPage} from './control-props';
-import {PropsGettersPage} from './props-getters';
 import {StateInitializerPage} from './state-initializer';
 import {StateReducerPage} from './state-reducer';
 import {WelcomePage} from './components/welcome-page';
@@ -45,11 +44,6 @@ export const routes = [
     path: '/control-props',
     label: 'Control Props',
     Component: ControlPropsPage,
-  },
-  {
-    path: '/props-getters',
-    label: 'Props Getters',
-    Component: PropsGettersPage,
   },
   {
     path: '/state-initializer',
